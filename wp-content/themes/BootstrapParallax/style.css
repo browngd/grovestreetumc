@@ -147,7 +147,7 @@ See: http://codex.wordpress.org/Child_Themes
 	padding: 100px 0;
 }
 #middle {
-	background: url(images/home.jpg) 50% 0 fixed;
+	background: #ffffff;
 	height: auto;
 	margin: 0 auto;
 	width: 100%;

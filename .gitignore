@@ -19,3 +19,5 @@ wp-config.php
 wp-config.php
 
 wp-config.php
+
+*.json
