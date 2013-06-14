@@ -21,3 +21,13 @@ wp-config.php
 wp-config.php
 
 *.json
+
+*.json
+
+.DS_Store
+
+wp-content/themes/.DS_Store
+
+wp-content/themes/.DS_Store
+
+*.json
