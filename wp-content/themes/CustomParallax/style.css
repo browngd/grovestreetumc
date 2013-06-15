@@ -45,7 +45,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 .navbar .nav > li > a {
   color:#555;
   float:none;
-  padding:20px 15px;
+  padding:20px 8px;
   text-decoration:none;
   text-shadow: none;
 }
@@ -1262,16 +1262,9 @@ strong.search-excerpt { background: yellow; }
 
     body {
     }
-    .navbar .nav > li > a {
-  padding:20px 8px;
-}
+
    #header .social-icons {
 	    text-align:left;
-    }
-    #header #logo {
-	    float:none;
-	    margin-left: 25px;
-	    /*text-align:center;*/
     }
 
 	.widget-wrapper {
@@ -1303,11 +1296,6 @@ strong.search-excerpt { background: yellow; }
     margin-left: -20px;
     padding: 0 20px;
   }
-  #header #logo {
-	    float:none;
-	    margin-left: 25px;
-	    /*text-align:center;*/
-    }
 }
 
 @media screen and (max-width: 650px) {
