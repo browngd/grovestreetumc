@@ -75,7 +75,8 @@
 
 
 
-          <div class="nav-collapse collapse pull-right">
+          <div class="nav-collapse collapse">
+
 			   <?php
 
                 $args = array(

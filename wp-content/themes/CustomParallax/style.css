@@ -63,6 +63,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
     color: #fff;
     text-decoration: none;
 }
+.nav-collapse .nav > li > a:hover {
+	background: #368DE8;
+  	color:#ffffff;
+}
+
+/*.social-icons {
+    font-size: 32px;
+    line-height: normal;
+    margin: 10px !important;
+    padding: 0;
+}*/
+
 
 .well-visitors {
 	background-color: #6FBBFC;
@@ -1088,7 +1100,7 @@ img.wp-post-image, img.attachment-thumbnail, img.attachment-medium, img.attachme
 
 #header .social-icons {
 	line-height:normal;
-	margin:3px 0 0 0;
+	margin:10px 0 0 0;
 	font-size: 32px;
 	padding: 0;
 }
@@ -1310,9 +1322,7 @@ strong.search-excerpt { background: yellow; }
     	height: auto;
     }
 
-	.widget-wrapper {
-	    padding-left:0;
-    }
+
 
     .widget-wrapper-left {
 	    padding-left:0;
