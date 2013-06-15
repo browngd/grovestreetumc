@@ -494,6 +494,7 @@ form div {
 #header #logo {
 	float:left;
 	margin:0;
+	margin-left: -10px;
 }
 
 #header #logo .site-name {
