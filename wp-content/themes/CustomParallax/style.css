@@ -102,7 +102,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
   padding-top: 0px;
-  border: 10px solid #fff;
+  border: 10px solid #f0f0f0;
   -moz-box-shadow:    3px 3px 10px 1px #03507a;
   -webkit-box-shadow: 3px 3px 10px 1px #03507a;
   box-shadow:         3px 3px 10px 1px #03507a;
@@ -120,12 +120,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	-moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
-  border: 10px solid #fff;
+  border: 10px solid #f0f0f0;
   -moz-box-shadow:    3px 3px 10px 1px #03507a;
   -webkit-box-shadow: 3px 3px 10px 1px #03507a;
   box-shadow:         3px 3px 10px 1px #03507a;
 }
 .well-header {
+	background-color: #f0f0f0;
 	-moz-box-shadow:    3px 3px 10px 1px #03507a;
   -webkit-box-shadow: 3px 3px 10px 1px #03507a;
   box-shadow:         3px 3px 10px 1px #03507a;
