@@ -70,6 +70,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
   border: 10px solid #ffffff;
+  padding-top: 0px;
 }
 
 .well-dark {
