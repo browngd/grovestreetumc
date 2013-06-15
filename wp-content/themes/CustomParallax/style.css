@@ -30,7 +30,7 @@ background: linear-gradient(to bottom,  #b2e1ff 0%,#66b6fc 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=0 ); /* IE6-9 */
 
 	text-shadow: none;
-	border-bottom-color: #91CEED;
+	border-bottom-color: #0D88D5;
 }
 .navbar .brand {
   color: #0984D2;
@@ -46,13 +46,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
   text-decoration:none;
   text-shadow: none;
 }
+.navbar .nav > li > a:hover {
+  color:#f0f0f0;
+}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background: rgb(73,155,234); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(32,124,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125) inset;
+    color: #fff;
+    text-decoration: none;
+}
+
 .well-visitors {
 	background-color: #A7DAFE;
+	-moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:        border-box;
+  border: 10px solid #ffffff;
 }
 
 .well-dark {
 	background-color: #333333;
 	color: #ffffff;
+}
+.well-reverse {
+	background-color: #ffffff;
+	-moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:        border-box;
+  border: 10px solid #A7DAFE;
 }
 
 #intro {
