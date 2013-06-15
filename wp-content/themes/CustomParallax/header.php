@@ -75,7 +75,7 @@
 
 
 
-          <div class="nav-collapse collapse">
+          <div class="nav-collapse collapse pull-right">
 			   <?php
 
                 $args = array(
@@ -95,6 +95,7 @@
                             <form class="navbar-search pull-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
                                 <input name="s" id="s" type="text" class="search-query" placeholder="<?php _e('Search','responsive'); ?>">
                             </form>
+
                             <?php } ?>
 
 
