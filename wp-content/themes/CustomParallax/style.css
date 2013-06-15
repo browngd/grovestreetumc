@@ -1361,7 +1361,9 @@ strong.search-excerpt { background: yellow; }
     #intro {
     	height: auto;
     }
-
+    .well-header {
+	margin-top: 80px;
+	}
 
 
     .widget-wrapper-left {
