@@ -22,7 +22,7 @@
 <!-- Section #3 -->
   <section id="footer" data-speed="10" data-type="background">
     <div class="container">
-      <h2 style="text-align:center">Come Find Christ At Grove Street United Methodist Church</h2><br /><br />
+      <h3 style="text-align:center">Come Find Jesus Christ At Grove Street United Methodist Church</h3><br /><br />
       <div class="row-fluid">
 
         <div class="span4">
