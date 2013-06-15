@@ -101,13 +101,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	-moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
-  border: 10px solid #ffffff;
   padding-top: 0px;
+  border: 10px solid #fff;
+  -moz-box-shadow:    3px 3px 10px 1px #03507a;
+  -webkit-box-shadow: 3px 3px 10px 1px #03507a;
+  box-shadow:         3px 3px 10px 1px #03507a;
 }
 
 .well-dark {
 	background-color: #333333;
 	color: #ffffff;
+	-moz-box-shadow:    3px 3px 10px 1px #000;
+  -webkit-box-shadow: 3px 3px 10px 1px #000;
+  box-shadow:         3px 3px 10px 1px #000;
 }
 .well-reverse {
 	background-color: #A7DAFE;
@@ -115,6 +121,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
   border: 10px solid #fff;
+  -moz-box-shadow:    3px 3px 10px 1px #03507a;
+  -webkit-box-shadow: 3px 3px 10px 1px #03507a;
+  box-shadow:         3px 3px 10px 1px #03507a;
+}
+.well-header {
+	-moz-box-shadow:    3px 3px 10px 1px #03507a;
+  -webkit-box-shadow: 3px 3px 10px 1px #03507a;
+  box-shadow:         3px 3px 10px 1px #03507a;
 }
 
 #intro {
