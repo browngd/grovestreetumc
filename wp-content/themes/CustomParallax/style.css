@@ -1266,6 +1266,11 @@ strong.search-excerpt { background: yellow; }
    #header .social-icons {
 	    text-align:left;
     }
+    #header #logo {
+	    float:none;
+	    margin-left: 25px;
+	    /*text-align:center;*/
+    }
 
 	.widget-wrapper {
 	    padding-left:0;
