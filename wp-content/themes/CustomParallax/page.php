@@ -4,8 +4,8 @@
  *
  *
  * @file           page.php
- * @package        Bootstrap Parallax 
- * @author         Brad Williams 
+ * @package        Bootstrap Parallax
+ * @author         Brad Williams
  * @copyright      2011 - 2013 Brag Interactive
  * @license        license.txt
  * @version        Release: 2.3.1
@@ -14,52 +14,52 @@
  */
 ?>
 <?php get_header(); ?>
-
+<div class="main">
     <div class="row">
         <div class="span9">
             <div id="content">
 
 <?php if (have_posts()) : ?>
 
-		<?php while (have_posts()) : the_post(); ?>
+        <?php while (have_posts()) : the_post(); ?>
 
          <?php if(of_get_option('breadcrumbs', '1')) {?>
         <?php echo responsive_breadcrumb_lists(); ?>
         <?php } ?>
-        
+
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                
+
                 <div class="page-header">
                 <h1 class="page-title"><?php the_title(); ?></h1>
             </div>
 
- 
-                <?php if ( comments_open() ) : ?>               
+
+                <?php if ( comments_open() ) : ?>
                 <div class="post-meta">
-                <?php 
+                <?php
                     printf( __( '<i class="icon-time"></i> %2$s <i class="icon-user"></i> %3$s', 'responsive' ),'meta-prep meta-prep-author',
-		            sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
-			            get_permalink(),
-			            esc_attr( get_the_time() ),
-			            get_the_date()
-		            ),
-		            sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
-			            get_author_posts_url( get_the_author_meta( 'ID' ) ),
-			        sprintf( esc_attr__( 'View all posts by %s', 'responsive' ), get_the_author() ),
-			            get_the_author()
-		                )
-			        );
-		        ?>
-				    <?php if ( comments_open() ) : ?>
+                    sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
+                        get_permalink(),
+                        esc_attr( get_the_time() ),
+                        get_the_date()
+                    ),
+                    sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
+                        get_author_posts_url( get_the_author_meta( 'ID' ) ),
+                    sprintf( esc_attr__( 'View all posts by %s', 'responsive' ), get_the_author() ),
+                        get_the_author()
+                        )
+                    );
+                ?>
+                    <?php if ( comments_open() ) : ?>
                         <span class="comments-link">
                         <span class="mdash">&mdash;</span>
                     <?php comments_popup_link(__('No Comments <i class="icon-arrow-down"></i>', 'responsive'), __('1 Comment <i class="icon-arrow-down"></i>', 'responsive'), __('% Comments <i class="icon-arrow-down"></i>', 'responsive')); ?>
                         </span>
-                    <?php endif; ?> 
+                    <?php endif; ?>
                 </div><!-- end of .post-meta -->
-                <?php endif; ?> 
+                <?php endif; ?>
 
-                
+
                 <div class="post-entry">
                     <?php the_content(__('Read more &#8250;', 'responsive')); ?>
                        <?php custom_link_pages(array(
@@ -72,38 +72,40 @@
                             'echo' => 1 )
                             ); ?>
                 </div><!-- end of .post-entry -->
-                
+
                 <?php if ( comments_open() ) : ?>
                 <div class="post-data">
-				    <?php the_tags(__('Tagged with:', 'responsive') . ' ', ', ', '<br />'); ?> 
-                    <?php the_category(__('Posted in %s', 'responsive') . ', '); ?> 
+                    <?php the_tags(__('Tagged with:', 'responsive') . ' ', ', ', '<br />'); ?>
+                    <?php the_category(__('Posted in %s', 'responsive') . ', '); ?>
                 </div><!-- end of .post-data -->
-                <?php endif; ?>             
-            
-            <div class="post-edit"><?php edit_post_link(__('Edit', 'responsive')); ?></div> 
+                <?php endif; ?>
+
+            <div class="post-edit"><?php edit_post_link(__('Edit', 'responsive')); ?></div>
             </div><!-- end of #post-<?php the_ID(); ?> -->
-            
+
             <?php comments_template( '', true ); ?>
-            
-        <?php endwhile; ?> 
-        
+
+        <?php endwhile; ?>
+
         <?php if (  $wp_query->max_num_pages > 1 ) : ?>
         <div class="navigation">
-			<div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
+            <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
             <div class="next"><?php previous_posts_link( __( 'Newer posts &#8250;', 'responsive' ) ); ?></div>
-		</div><!-- end of .navigation -->
+        </div><!-- end of .navigation -->
         <?php endif; ?>
 
-	    <?php else : ?>
+        <?php else : ?>
 
         <h1 class="title-404"><?php _e('404 &#8212; Fancy meeting you here!', 'responsive'); ?></h1>
         <p><?php _e('Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here.', 'responsive'); ?></p>
         <h6><?php _e( 'You can return', 'responsive' ); ?> <a href="<?php echo home_url(); ?>/" title="<?php esc_attr_e( 'Home', 'responsive' ); ?>"><?php _e( '&#9166; Home', 'responsive' ); ?></a> <?php _e( 'or search for the page you were looking for', 'responsive' ); ?></h6>
         <?php get_search_form(); ?>
 
-<?php endif; ?>  
+<?php endif; ?>
       </div><!-- end of #content -->
         </div><!-- end of .span9 -->
 
+
 <?php get_sidebar(); ?>
+</div><!-- end of .main -->
 <?php get_footer(); ?>
