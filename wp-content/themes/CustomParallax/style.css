@@ -65,7 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 }
 
 .well-visitors {
-	background-color: #A7DAFE;
+	background-color: #6FBBFC;
 	-moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
@@ -77,11 +77,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 	color: #ffffff;
 }
 .well-reverse {
-	background-color: #ffffff;
+	background-color: #A7DAFE;
 	-moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
-  border: 10px solid #A7DAFE;
+  border: 10px solid #fff;
 }
 
 #intro {
