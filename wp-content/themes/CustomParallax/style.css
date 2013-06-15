@@ -1296,6 +1296,11 @@ strong.search-excerpt { background: yellow; }
     margin-left: -20px;
     padding: 0 20px;
   }
+  #header #logo {
+	    float:none;
+	    margin-left: 25px;
+	    /*text-align:center;*/
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -1305,7 +1310,7 @@ strong.search-excerpt { background: yellow; }
 
     #header #logo {
 	    float:none;
-	    margin-left: 15px;
+	    margin-left: 25px;
 	    /*text-align:center;*/
     }
 
