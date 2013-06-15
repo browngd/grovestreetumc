@@ -88,12 +88,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   	color:#ffffff;
 }
 
-/*.social-icons {
-    font-size: 32px;
-    line-height: normal;
-    margin: 10px !important;
-    padding: 0;
-}*/
+.navbar .btn-navbar {
+    margin-right: 25px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
 
 
 .well-visitors {
@@ -1304,7 +1304,8 @@ strong.search-excerpt { background: yellow; }
 
     #header #logo {
 	    float:none;
-	    text-align:center;
+	    margin-left: 15px;
+	    /*text-align:center;*/
     }
 
     .content-right, .sidebar-content {
@@ -1364,7 +1365,9 @@ strong.search-excerpt { background: yellow; }
     .well-header {
 	margin-top: 80px;
 	}
-
+	#header .social-icons {
+	    margin-left: 25px;
+    }
 
     .widget-wrapper-left {
 	    padding-left:0;
