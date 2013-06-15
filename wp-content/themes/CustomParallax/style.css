@@ -45,7 +45,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 .navbar .nav > li > a {
   color:#555;
   float:none;
-  padding:20px 8px;
+  padding:20px 15px;
   text-decoration:none;
   text-shadow: none;
 }
@@ -1262,7 +1262,9 @@ strong.search-excerpt { background: yellow; }
 
     body {
     }
-
+    .navbar .nav > li > a {
+  padding:20px 8px;
+}
    #header .social-icons {
 	    text-align:left;
     }
