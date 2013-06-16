@@ -145,6 +145,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
    border: 1px solid #C4C4C4;
 
 }
+.pastor {
+	background: url('css/images/william-brown[alpha].png');
+	background-repeat:no-repeat;
+}
 
 /*.myslider {
   -moz-box-shadow:    inset 0 0 10px #000000;
