@@ -97,18 +97,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 
 
 .well-visitors {
-	background: rgba(167,218,254,.6) !important;
+	background: rgba(250,250,250,.7) !important;
 	-moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
   padding-top: 0px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #999;
   -moz-box-shadow:    3px 3px 10px 1px #03507a;
   -webkit-box-shadow: 3px 3px 10px 1px #03507a;
   box-shadow:         3px 3px 10px 1px #03507a;
   -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+   box-shadow:         0 0 15px #000000;
 }
 
 .well-dark {
@@ -122,30 +122,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
    box-shadow:         inset 0 0 10px #000000;*/
 }
 .well-reverse {
-	background: rgba(250,250,250,.6) !important;
+	background: rgba(250,250,250,.7) !important;
 	-moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:        border-box;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #999;
   -moz-box-shadow:    3px 3px 10px 1px #03507a;
   -webkit-box-shadow: 3px 3px 10px 1px #03507a;
   box-shadow:         3px 3px 10px 1px #03507a;
     -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+   box-shadow:         0 0 10px #000000;
 }
 .well-header {
-	background-color: #f0f0f0;
-	-moz-box-shadow:    3px 3px 10px 1px #03507a;
+    background-color: #f0f0f0;
+    -moz-box-shadow:    3px 3px 10px 1px #03507a;
   -webkit-box-shadow: 3px 3px 10px 1px #03507a;
   box-shadow:         3px 3px 10px 1px #03507a;
     -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
    border: 1px solid #C4C4C4;
+
 }
 
+/*.myslider {
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:        inset 0 0 20px #999 !important;
+   box-shadow:        inset 0 0 20px #000;
 
+}
+.nivoSlider {
+	box-shadow:        inset 0 0 20px #999 !important;
+}*/
 
 #intro {
 	background: url(images/intro.png) 50% 0 fixed;
