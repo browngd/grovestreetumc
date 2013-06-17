@@ -1344,6 +1344,12 @@ strong.search-excerpt { background: yellow; }
 	.powered {
 	text-align:center;
 	}
+	.pastor p {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: auto;
+}
 }
 
 @media (max-width: 769px) {
