@@ -169,7 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 .pastor p {
 	position: relative;
 	float: left;
-	width: 65%;
+	width: 60%;
 	height: auto;
 }
 
@@ -1344,12 +1344,6 @@ strong.search-excerpt { background: yellow; }
 	.powered {
 	text-align:center;
 	}
-	.pastor p {
-	position: relative;
-	float: left;
-	width: 50%;
-	height: auto;
-}
 }
 
 @media (max-width: 769px) {
