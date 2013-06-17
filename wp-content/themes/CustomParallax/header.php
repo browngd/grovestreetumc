@@ -29,6 +29,15 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+<!-- Standard iPhone -->
+<link rel="apple-touch-icon" sizes="57x57" href="<?php get_template_directory_uri();?>/css/images/touch-icon-iphone-114.png" />
+<!-- Retina iPhone -->
+<link rel="apple-touch-icon" sizes="114x114" href="<?php get_template_directory_uri();?>/css/images/touch-icon-iphone-114.png" />
+<!-- Standard iPad -->
+<link rel="apple-touch-icon" sizes="72x72" href="<?php get_template_directory_uri();?>/css/images/touch-icon-ipad-144.png" />
+<!-- Retina iPad -->
+<link rel="apple-touch-icon" sizes="144x144" href="<?php get_template_directory_uri();?>/css/images/touch-icon-ipad-144.png" />
+
 <!--[if IE 7]>
   <link rel="stylesheet" href="<?php get_template_directory_uri();?>/css/font-awesome-ie7.min.css">
 <![endif]-->
