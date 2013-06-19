@@ -386,7 +386,7 @@ label {
 
 select {
 	height:auto;
-	width:70%;
+	width:auto;
 }
 
 textarea, .area {
