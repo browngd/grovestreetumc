@@ -776,11 +776,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 
 #content .bypostauthor {
 }
-.page-header {
+/*.page-header {
     border-bottom: 0px;
     margin: 0px;
     padding-bottom: 0px;
-}
+}*/
 /* =Author Meta (Author's Box)
 -------------------------------------------------------------- */
 #author-meta {
