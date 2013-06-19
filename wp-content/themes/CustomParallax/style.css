@@ -731,12 +731,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 .home .navbar-fixed-top {
 	margin-bottom: 0 !important;
 }
-.page-header {
-	width:100%;
-	height:400px;
-	margin-top: -30px;
-	background-image: url("http://www.grovestreetumc.org/assets/sky-clouds-page-header.jpg");
-}
+
 /* =Content
 -------------------------------------------------------------- */
 #content {
@@ -776,11 +771,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 
 #content .bypostauthor {
 }
-/*.page-header {
-    border-bottom: 0px;
-    margin: 0px;
-    padding-bottom: 0px;
-}*/
+
 /* =Author Meta (Author's Box)
 -------------------------------------------------------------- */
 #author-meta {
