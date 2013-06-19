@@ -107,6 +107,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 }
 .nav-tabs > li > a:hover {
 	background: #0088cc;
+	color: #ffffff;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
