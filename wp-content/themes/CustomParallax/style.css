@@ -558,6 +558,261 @@ ol ol, ul ol {
 form div {
 
 }
+/* Collapse-o-matic styles
+-------------------------------------------------------------- */
+
+.collapseomatic {
+    box-shadow: 4px 3px 7px -1px #BBBBBB;
+    cursor: pointer;
+    display: block;
+    margin: 8px 0;
+    padding: 5px;
+    text-decoration: none !important;
+    vertical-align: middle;
+}
+.arrowright {
+    background-position: right top;
+    padding: 0 16px 10px 0;
+}
+.noarrow {
+    background-image: none !important;
+    padding: 0 0 10px;
+}
+.colomat-hover {
+    background: none repeat scroll 0 0 #CCCCCC;
+}
+.colomat-close {
+}
+.colomat-visited {
+}
+.collapseomatic_excerpt, .collapseomatic_content {
+    font-size: 14px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 10px 16px 5px;
+}
+.collapseomatic_excerpt p:last-child, .collapseomatic_content p:last-child {
+    margin-bottom: 0;
+}
+.collapseomatic_excerpt.level-2-targ, .collapseomatic_content.level-2-targ, .collapseomatic_excerpt.level-3-targ, .collapseomatic_content.level-3-targ {
+    box-shadow: 4px 3px 7px -1px #BBBBBB;
+}
+.content_collapse_wrapper {
+    display: none;
+}
+.collapseall, .expandall {
+    background: none repeat scroll 0 0 #435B47;
+    bottom: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 7px;
+    position: fixed;
+    right: 0;
+    text-transform: uppercase;
+}
+.collapseall:hover, .expandall:hover {
+    text-decoration: none;
+}
+div.coc-header {
+    background: url("images/logo-bullet.png") no-repeat scroll 0 16px transparent !important;
+    clear: both;
+    display: block;
+    font-size: 19px;
+    height: 48px;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+.level-1 {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #E0E0E0;
+    background-image: url("images/arrow-right-white.png") !important;
+    background-origin: padding-box;
+    background-position: 0 8px !important;
+    background-repeat: no-repeat !important;
+    background-size: auto auto;
+    border-radius: 2px 2px 2px 2px;
+    clear: both;
+    color: #435B47;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.425;
+    padding: 5px 14px 5px 24px;
+    text-transform: uppercase;
+}
+.level-1:hover {
+    background-image: url("images/arrow-right-red.png") !important;
+}
+.level-1.colomat-close {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #888D93;
+    background-image: url("images/arrow-down-red.png") !important;
+    background-origin: padding-box;
+    background-position: 6px 0 !important;
+    background-repeat: no-repeat !important;
+    background-size: auto auto;
+    color: #222D23;
+}
+.level-1.colomat-close:hover {
+    background-image: url("images/arrow-down-white.png") !important;
+}
+.level-2 {
+    background: none repeat scroll 0 0 #ECECEC;
+    border-radius: 2px 2px 2px 2px;
+    color: #435B47;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.425;
+    margin: 0 1% 7px;
+    padding: 5px 9px;
+    text-transform: uppercase;
+    width: auto;
+}
+.level-2:hover {
+    background: none repeat scroll 0 0 #E0E0E0;
+}
+.level-2.colomat-close {
+    background: none repeat scroll 0 0 #B6B0B0;
+    border-radius: 2px 2px 0 0;
+    color: #222D23;
+    margin: 0;
+    width: auto;
+}
+.level-2-targ {
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-radius: 0 0 2px 2px;
+    border-right: 1px solid #ECECEC;
+}
+.level-3-targ {
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-radius: 0 0 2px 2px;
+    border-right: 1px solid #ECECEC;
+}
+.level-3 {
+    background: none repeat scroll 0 0 #ECECEC;
+    border-radius: 2px 2px 2px 2px;
+    color: #435B47;
+    font-size: 12.5px;
+    font-weight: bold;
+    margin: 0 1% 7px;
+    padding: 5px 9px;
+    text-transform: uppercase;
+    width: 95%;
+}
+.level-3:hover {
+    background: none repeat scroll 0 0 #E0E0E0;
+}
+.level-3.colomat-close {
+    background: none repeat scroll 0 0 #C9C9C9;
+    border-radius: 3px 3px 0 0;
+    color: #222D23;
+    margin: 0;
+    width: auto;
+}
+.half {
+    width: 42.5% !important;
+}
+.half.colomat-close {
+    width: auto !important;
+}
+.third {
+    width: 27% !important;
+}
+.third.colomat-close {
+    width: auto !important;
+}
+.fourth {
+    width: 18.5% !important;
+}
+.fourth.colomat-close {
+    width: auto !important;
+}
+.seventh {
+    width: 8% !important;
+}
+.seventh.colomat-close {
+    width: auto !important;
+}
+.half {
+    display: inline-block;
+    width: 44.5%;
+}
+.half:hover {
+}
+.half.colomat-close {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: auto;
+}
+.third {
+    display: inline-block;
+    width: 28%;
+}
+.third:hover {
+}
+.third.colomat-close {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: auto;
+}
+.fourth {
+    display: inline-block;
+    width: 19.5%;
+}
+.fourth:hover {
+}
+.fourth.colomat-close {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: auto;
+}
+.fifth {
+    display: inline-block;
+    width: 15%;
+}
+.fifth:hover {
+}
+.fifth.colomat-close {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: auto;
+}
+.sixth {
+    display: inline-block;
+    width: 11.7%;
+}
+.sixth:hover {
+}
+.sixth.colomat-close {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: auto;
+}
+.seventh {
+    display: inline-block;
+    width: 9.2%;
+}
+.seventh:hover {
+}
+.seventh.colomat-close {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: auto;
+}
+
+
 
 /* =Globals
 -------------------------------------------------------------- */
