@@ -2,7 +2,7 @@
 /**
  * Full Content Template
  *
-   Template Name:  Full Width Page (no sidebar)
+   Template Name:  Custom Full Page
  *
  * @file           full-width-page.php
  * @package        Bootstrap Parallax
@@ -15,11 +15,7 @@
  */
 ?>
 <?php get_header(); ?>
-<div class="container">
-<div class="row">
-        <div class="span12">
 
-        <div id="content-full">
 
 <?php if (have_posts()) : ?>
 
@@ -104,10 +100,7 @@
         <?php get_search_form(); ?>
 
 <?php endif; ?>
-</div>
-</div>
-</div>
-</div>
+
 
 
 <?php get_footer(); ?>
