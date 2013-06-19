@@ -1,0 +1,82 @@
+div.pray_request_wrap form { display:inline; }
+
+.ul-addw2p {
+	margin:0;
+	padding:0;
+}
+
+.praying {
+	text-align: right;
+	float: right;
+	clear: right;
+	font-style: italic;
+	font-size: 11px;
+	margin-top: 2px;
+}
+
+div.pray_request_wrap {
+	padding: 5px 10px;
+	background: #F8F8F8;
+	margin: 0px 7px 7px 7px;
+	overflow: hidden;
+	clear: both;
+	font-size: 13px;
+	border-left: solid 3px #B6C0B8;
+	box-shadow: 4px 3px 7px -1px #BBB;
+}
+div.pray_request_wrap iframe {
+	margin-bottom: 5px;
+	float:right;
+}
+div.pray_request { float: left; }
+
+div.amen-alt { background-color: #eee !important; }
+
+div.amen-inactive { background: rgb(192, 115, 111) !important; }
+div.amen-inactivealt { background: #C0736F !important; }
+
+.pray_request_urgent { border-left: 3px #B93232 solid; }
+div.pray_request_urgent { border-left: 3px #B93232 solid; }
+
+div.pray_request_not_approved { border-left: 10px #333 solid; }
+
+div.amen-header {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	font-size: 19px;
+	text-transform: uppercase;
+	height: 48px;
+	clear: both;
+	display:block;
+	background:url('logo-bullet.png');
+	background-repeat: no-repeat !important;
+	background-position: 0 16px !important;
+}
+
+.amen-submission {
+	font-size: 12px;
+}
+
+div.amen-update {
+	padding: 5px 10px 3px 10px;
+	background: #FFF;
+	margin: 5px 10px 5px 10px;
+	overflow: hidden;
+	clear: both;
+	font-size: 12px;
+	box-shadow: inset 3px 2px 7px -1px #B6C0B8;
+	border-radius: 4px;
+}
+
+div.pray_request_inner_wrap {
+	overflow: hidden;
+}
+
+form.amen-admin input[type="text"] {
+	width: 300px;
+}
+
+.amen-small-button {
+	line-height: 1;
+	font-size: .5rem;
+}
