@@ -178,6 +178,7 @@ sizingMethod='scale');
 	height: auto;
 }
 
+
 /*.myslider {
   -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
@@ -360,6 +361,14 @@ img {
 
 /* =Forms
 -------------------------------------------------------------- */
+
+/*.amen-submission form {
+	margin: 0 0 -20px;
+}*/
+
+form {
+  margin:0 0 -20px;
+}
 fieldset {
 	margin:0 0 1.5em;
 	padding:1em 2em;
