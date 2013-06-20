@@ -136,6 +136,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   min-height:40px;
   width:100%;
   padding-top: 0px;
+  text-align: center;
+}
+.verse h5 {
+	color: #999;
+	font-style: italic;
 }
 
 
