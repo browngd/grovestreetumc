@@ -18,11 +18,13 @@
 
 
  <?php responsive_container_end(); // after container hook ?>
-
+<div class="verse">
+<h4>Come Discover Jesus Christ At Grove Street United Methodist Church</h4>
+</div>
 <!-- Section #3 -->
   <section id="footer" data-speed="10" data-type="background">
+
     <div class="container">
-      <h3 style="text-align:center">Come Find Jesus Christ At Grove Street United Methodist Church</h3><br /><br />
       <div class="row-fluid">
 
         <div class="span4">
