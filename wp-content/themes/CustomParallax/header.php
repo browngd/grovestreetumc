@@ -44,6 +44,8 @@
 
 <?php wp_head(); ?>
 
+
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -117,11 +119,11 @@
 
                 echo '<div class="social-icons nav pull-right">';
 
-           if (of_get_option('twitter_url')) echo '<a href="' . of_get_option('twitter_url') . '">'
+           if (of_get_option('twitter_url')) echo '<a rel="tooltip" title="Connect on Twitter" href="' . of_get_option('twitter_url') . '">'
                     .'<i class="icon-twitter-sign"></i>'
                     .'</a>';
 
-                if (of_get_option('fb_url')) echo '<a href="' . of_get_option('fb_url') . '">'
+                if (of_get_option('fb_url')) echo '<a rel="tooltip" title="Connect on Facebook" href="' . of_get_option('fb_url') . '">'
                     .'<i class="icon-facebook-sign"></i>'
                     .'</a>';
 

@@ -118,7 +118,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   background-color: #0088cc;
 }
 
-
+.verse {
+  width:100%;
+}
+.verse {
+  -webkit-background-clip:padding-box;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0 4px 10px;
+  background-clip:padding-box;
+  background-color:#E4E4E4;
+  background-image:-webkit-linear-gradient(top, #EEEEEE, #D5D5D5);
+  background-repeat:repeat no-repeat;
+  border-color:#D5D5D5 #D5D5D5 #BBBBBB;
+  border-style:solid;
+  border-width:1px;
+  box-shadow:rgba(0, 0, 0, 0.2) 0 4px 10px;
+  margin:0 auto;
+  min-height:40px;
+  width:100%;
+  padding-top: 15px;
+}
 
 
 
