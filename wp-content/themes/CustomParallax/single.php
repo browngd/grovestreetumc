@@ -14,6 +14,23 @@
  */
 ?>
 <?php get_header(); ?>
+<div class="page-header-top">
+  <div class="container">
+<div class="row">
+<div class="span12">
+<div id="content-full">
+  <div style="margin-top:30px;">
+
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="verse">
+<h5>Jesus answered and said unto him, Verily, verily, I say unto thee, Except a man be born again, he cannot see the kingdom of God. John 3:3</h5>
+</div>
+
 
 <div class="container">
 <div class="row">

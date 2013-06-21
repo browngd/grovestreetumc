@@ -4,8 +4,8 @@
  *
  *
  * @file           archive.php
- * @package        Bootstrap Parallax 
- * @author         Brad Williams 
+ * @package        Bootstrap Parallax
+ * @author         Brad Williams
  * @copyright      2011 - 2013 Brag Interactive
  * @license        license.txt
  * @version        Release: 2.3.1
@@ -14,17 +14,34 @@
  */
 ?>
 <?php get_header(); ?>
+<div class="page-header-top">
+  <div class="container">
+<div class="row">
+<div class="span12">
+<div id="content-full">
+  <div style="margin-top:30px;">
+
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="verse">
+<h5>Jesus answered and said unto him, Verily, verily, I say unto thee, Except a man be born again, he cannot see the kingdom of God. John 3:3</h5>
+</div>
+
 <div class="container">
 <div class="row">
         <div class="span9">
         <div id="content-archive">
 
 <?php if (have_posts()) : ?>
-        
+
        <?php if(of_get_option('breadcrumbs', '1')) {?>
         <?php echo responsive_breadcrumb_lists(); ?>
         <?php } ?>
-        
+
 		    <h6>
 			    <?php if ( is_day() ) : ?>
 				    <?php printf( __( 'Daily Archives: %s', 'responsive' ), '<span>' . get_the_date() . '</span>' ); ?>
@@ -36,14 +53,14 @@
 					<?php _e( 'Blog Archives', 'responsive' ); ?>
 				<?php endif; ?>
 			</h6>
-        
+
         <?php while (have_posts()) : the_post(); ?>
-        
+
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'responsive'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h1>
-                
+
                 <div class="post-meta">
-                <?php 
+                <?php
                     printf( __( '<i class="icon-time"></i> %2$s <i class="icon-user"></i> %3$s', 'responsive' ),'meta-prep meta-prep-author',
 		            sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
 			            get_permalink(),
@@ -62,9 +79,9 @@
                         <span class="mdash">&mdash;</span>
                     <?php comments_popup_link(__('No Comments <i class="icon-arrow-down"></i>', 'responsive'), __('1 Comment <i class="icon-arrow-down"></i>', 'responsive'), __('% Comments <i class="icon-arrow-down"></i>', 'responsive')); ?>
                         </span>
-                    <?php endif; ?> 
+                    <?php endif; ?>
                 </div><!-- end of .post-meta -->
-                
+
                 <div class="post-entry">
                     <?php the_excerpt(); ?>
                      <?php custom_link_pages(array(
@@ -77,18 +94,18 @@
                             'echo' => 1 )
                             ); ?>
                 </div><!-- end of .post-entry -->
-                
-                <div class="post-data">
-				    <?php the_tags(__('Tagged with:', 'responsive') . ' ', ' ', '<br />'); ?> 
-                </div><!-- end of .post-data -->             
 
-            <div class="post-edit"><?php edit_post_link(__('Edit', 'responsive')); ?></div>             
+                <div class="post-data">
+				    <?php the_tags(__('Tagged with:', 'responsive') . ' ', ' ', '<br />'); ?>
+                </div><!-- end of .post-data -->
+
+            <div class="post-edit"><?php edit_post_link(__('Edit', 'responsive')); ?></div>
             </div><!-- end of #post-<?php the_ID(); ?> -->
-            
+
             <?php comments_template( '', true ); ?>
-            
-        <?php endwhile; ?> 
-        
+
+        <?php endwhile; ?>
+
         <?php if (  $wp_query->max_num_pages > 1 ) : ?>
         <div class="navigation">
 			<div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'responsive' ) ); ?></div>
@@ -103,10 +120,10 @@
         <h6><?php _e( 'You can return', 'responsive' ); ?> <a href="<?php echo home_url(); ?>/" title="<?php esc_attr_e( 'Home', 'responsive' ); ?>"><?php _e( '&#9166; Home', 'responsive' ); ?></a> <?php _e( 'or search for the page you were looking for', 'responsive' ); ?></h6>
         <?php get_search_form(); ?>
 
-<?php endif; ?>  
-      
+<?php endif; ?>
+
         </div><!-- end of #content-archive -->
     </div>
-        
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
