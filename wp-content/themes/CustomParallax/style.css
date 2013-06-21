@@ -1602,6 +1602,9 @@ strong.search-excerpt { background: yellow; }
   .well-header {
 	margin-top: 80px;
 	}
+	.video-wrapper {
+		margin-top: 80px;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -1609,10 +1612,27 @@ strong.search-excerpt { background: yellow; }
     body {
     }
     .video-wrapper {
+    	margin-top: 80px;
 	width: 100%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+}
+.page-header-top {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.verse {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.top-footer {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.sub-footer {
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
     #header #logo {
