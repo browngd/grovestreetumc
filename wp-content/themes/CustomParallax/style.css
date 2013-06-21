@@ -1603,7 +1603,7 @@ strong.search-excerpt { background: yellow; }
 	margin-top: 80px;
 	}
 	.video-wrapper {
-		margin-top: 80px;
+		margin-top: 100px;
 	}
 }
 
@@ -1612,15 +1612,16 @@ strong.search-excerpt { background: yellow; }
     body {
     }
     .video-wrapper {
-    	margin-top: 80px;
+    	margin-top: 100px;
 	width: 100%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 .page-header-top {
-	margin-left: -10px;
-	margin-right: -10px;
+	width: 100%;
+	margin-left: -20px;
+	margin-right: -20px;
 }
 .verse {
 	margin-left: -10px;
