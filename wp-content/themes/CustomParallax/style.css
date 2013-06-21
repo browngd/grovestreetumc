@@ -46,10 +46,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 .navbar .nav > li > a {
   color:#555;
   float:none;
-  padding:15px 8px;
+  padding:15px 15px;
   text-decoration:none;
   text-shadow: none;
-  font-size: 16px;
+  /*font-size: 16px;*/
 }
 .navbar .nav > li > a:hover {
 	background: rgb(73,155,234); /* Old browsers */
