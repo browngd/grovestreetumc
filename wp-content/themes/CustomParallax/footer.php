@@ -18,7 +18,7 @@
 
 
  <?php responsive_container_end(); // after container hook ?>
-<div class="verse">
+<div class="top-footer">
 <h4>Come Discover Jesus Christ At Grove Street United Methodist Church</h4>
 </div>
 <!-- Section #3 -->
