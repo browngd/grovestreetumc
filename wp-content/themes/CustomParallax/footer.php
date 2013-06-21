@@ -53,11 +53,15 @@
 
             <?php endif; ?>
             </div>
-
         </div>
       </div>
   </section>
-
+      <div class="sub-footer">
+        <div class="container">
+<p class="pull-left">© 2013 Grove Street United Methodist Church. All rights reserved. </p>
+<p class="pull-right">Designed by <a rel="tooltip" title="Visit to find out how BitCrunched! can help you!" href="http://www.bitcrunched.com"><span style="color: #889D07 !important">Bit</span><span style="color: #FA6801 !important">Crunched!
+</div>
+</div>
 <?php wp_footer(); ?>
 <!-- Microsoft Translator -->
 <div id="MicrosoftTranslatorWidget" style="width: 200px; min-height: 0px; border-color: #3A5770; background-color: #78ADD0; display: none;"><noscript><a href="http://www.microsofttranslator.com/bv.aspx?a=http%3a%2f%2fwww.grovestreetumc.org%2f">Translate this page</a><br />Powered by <a href="http://www.bing.com/translator">Microsoft® Translator</a></noscript></div> <script type="text/javascript"> /* <![CDATA[ */ setTimeout(function() { var s = document.createElement("script"); s.type = "text/javascript"; s.charset = "UTF-8"; s.src = ((location && location.href && location.href.indexOf('https') == 0) ? "https://ssl.microsofttranslator.com" : "http://www.microsofttranslator.com" ) + "/ajax/v2/widget.aspx?mode=auto&widget=none&from=en&layout=ts"; var p = document.getElementsByTagName('head')[0] || document.documentElement; p.insertBefore(s, p.firstChild); }, 0); /* ]]> */ </script>
