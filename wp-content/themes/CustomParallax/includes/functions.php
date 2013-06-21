@@ -4,8 +4,8 @@
  *
  *
  * @file           functions.php
- * @package        Bootstrap Parallax 
- * @author         Brad Williams 
+ * @package        Bootstrap Parallax
+ * @author         Brad Williams
  * @copyright      2011 - 2013 Brag Interactive
  * @license        license.txt
  * @version        Release: 2.3.1
@@ -43,7 +43,7 @@ if (!function_exists('responsive_setup')):
             $locale_file = get_template_directory().'/languages/$locale.php';
             if (is_readable( $locale_file))
 	            require_once( $locale_file);
-						
+
         /**
          * Add callback for custom TinyMCE editor stylesheets. (editor-style.css)
          * @see http://codex.wordpress.org/Function_Reference/add_editor_style
@@ -66,8 +66,8 @@ if (!function_exists('responsive_setup')):
         add_image_size( 'port-full', 600, 400 );
 
 
-        $options = get_option('responsive_theme_options');    
-		
+        $options = get_option('responsive_theme_options');
+
     }
 
 endif;
@@ -96,14 +96,14 @@ add_filter('wp_page_menu', 'responsive_wp_page_menu');
 
 /**
  * Filter 'get_comments_number'
- * 
- * Filter 'get_comments_number' to display correct 
- * number of comments (count only comments, not 
+ *
+ * Filter 'get_comments_number' to display correct
+ * number of comments (count only comments, not
  * trackbacks/pingbacks)
  *
  * Courtesy of Chip Bennett
  */
-function responsive_comment_count( $count ) {  
+function responsive_comment_count( $count ) {
 	if ( ! is_admin() ) {
 		global $id;
 		$comments_by_type = &separate_comments(get_comments('status=approve&post_id=' . $id));
@@ -116,8 +116,8 @@ add_filter('get_comments_number', 'responsive_comment_count', 0);
 
 /**
  * wp_list_comments() Pings Callback
- * 
- * wp_list_comments() Callback function for 
+ *
+ * wp_list_comments() Callback function for
  * Pings (Trackbacks/Pingbacks)
  */
 function responsive_comment_list_pings( $comment ) {
@@ -289,7 +289,7 @@ function responsive_breadcrumb_lists() {
     if (!function_exists('responsive_js')) {
 
         function responsive_js() {
-			// JS at the bottom for fast page loading. 
+			// JS at the bottom for fast page loading.
 			// except for Modernizr which enables HTML5 elements & feature detects.
 			wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/responsive-modernizr.js', array('jquery'), '2.5.3', false);
             wp_enqueue_script('responsive-scripts', get_template_directory_uri() . '/js/responsive-scripts.js', array('jquery'), '1.1.0', true);
@@ -303,13 +303,13 @@ function responsive_breadcrumb_lists() {
      * A comment reply.
      */
         function responsive_enqueue_comment_reply() {
-    if ( is_singular() && comments_open() && get_option('thread_comments')) { 
-            wp_enqueue_script('comment-reply'); 
+    if ( is_singular() && comments_open() && get_option('thread_comments')) {
+            wp_enqueue_script('comment-reply');
         }
     }
 
     add_action( 'wp_enqueue_scripts', 'responsive_enqueue_comment_reply' );
-	
+
     /**
      * Where the post has no post title, but must still display a link to the single-page post view.
      */
@@ -357,7 +357,7 @@ function responsive_breadcrumb_lists() {
             'before_widget' => '<div id="%1$s" class="%2$s">',
             'after_widget' => '</div>'
         ));
-       
+
         register_sidebar(array(
             'name' => __('Footer Widget 3', 'responsive'),
             'description' => __('footer.php', 'responsive'),
@@ -367,7 +367,17 @@ function responsive_breadcrumb_lists() {
             'before_widget' => '<div id="%1$s" class="%2$s">',
             'after_widget' => '</div>'
         ));
+
+        register_sidebar(array(
+            'name' => __('Footer Widget 4', 'responsive'),
+            'description' => __('footer.php', 'responsive'),
+            'id' => 'footer-widget-4',
+            'before_title' => '<div id="widget-title-three" class="widget-title-footer"><h2>',
+            'after_title' => '</h2></div>',
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget' => '</div>'
+        ));
     }
-	
+
     add_action('widgets_init', 'responsive_widgets_init');
 ?>

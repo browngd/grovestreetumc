@@ -43,13 +43,20 @@
                 <div class="textwidget"><?php _e('This is your second footer widget box. To edit please go to Appearance > Widgets','responsive'); ?></div>
 
             <?php endif; ?>
-            </div>
-
-            <div class="span4">
-           <?php if (!dynamic_sidebar('footer-widget-3')) : ?>
+            <br/>
+            <?php if (!dynamic_sidebar('footer-widget-3')) : ?>
 
                 <div class="widget-title-footer"><h2><?php _e('Footer Widget 3', 'responsive'); ?></h2></div>
                 <div class="textwidget"><?php _e('This is your third footer widget box. To edit please go to Appearance > Widgets','responsive'); ?></div>
+
+            <?php endif; ?>
+            </div>
+
+            <div class="span4">
+           <?php if (!dynamic_sidebar('footer-widget-4')) : ?>
+
+                <div class="widget-title-footer"><h2><?php _e('Footer Widget 4', 'responsive'); ?></h2></div>
+                <div class="textwidget"><?php _e('This is the fourth footer widget box. ','responsive'); ?></div>
 
             <?php endif; ?>
             </div>
