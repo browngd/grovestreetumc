@@ -190,7 +190,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         0 0 15px #000000;*/
 }
-
 .well-dark {
 	background-color: #000;
 	background: rgba(0,0,0,.7) !important;
