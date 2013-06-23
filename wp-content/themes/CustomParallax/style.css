@@ -16,6 +16,7 @@ CREATE CHILD THEME.
 See: http://codex.wordpress.org/Child_Themes
 */
 
+
 .navbar-fixed-top {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -310,6 +311,32 @@ sizingMethod='scale');
 	box-shadow:        inset 0 0 20px #999 !important;
 }*/
 
+.content-overlay {
+  margin-top: -200px;
+  background: #ffffff;
+  max-width:1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #999
+}
+.outer {
+  overflow: hidden;
+  padding: 5px 5px 5px 0;
+}
+.header-overlay {
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 68%, rgba(255,255,255,1) 93%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(68%,rgba(255,255,255,0)), color-stop(93%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+height: 390px !important;
+width: 100%;
+z-index: 1000;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -819,6 +846,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 #header #logo .site-name a {
 	font-weight:700;
 }
+.prayer-text {
+  font-family: 'Asset', sans-serif;
+  height: auto;
+  padding-top: 130px;
+  font-size: 350px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+ -webkit-text-fill-color: transparent;
+ background: -webkit-linear-gradient(transparent, transparent),
+             url(http://www.grovestreetumc.org/assets/prayer_banner1.jpg) repeat;
+ background: -o-linear-gradient(transparent, transparent);
+ -webkit-background-clip: text;
+}
+@import url(http://fonts.googleapis.com/css?family=Asset);
+
+.masked{
+  font-family: 'Asset', sans-serif;
+  height: auto;
+  padding-top: 130px;
+  font-size: 350px;
+  text-align: center;
+  font-weight: bold;
+background: url(http://www.grovestreetumc.org/assets/prayer_banner1.jpg) repeat, white;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+/*-webkit-animation-name: masked-animation;
+-webkit-animation-duration: 40s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;*/
+}
+@-webkit-keyframes masked-animation {
+0% {background-position: left bottom;}
+100% {background-position: right bottom;}
+}
 
 .navbar-fixed-top {
 	margin-bottom: 18px !important;
@@ -831,7 +893,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', end
 	width:100%;
 	height:390px;
 	margin-top: -30px;
-	background-image: url("http://www.grovestreetumc.org/assets/sky-clouds-page-header.jpg");
+background-image: url("http://www.grovestreetumc.org/assets/sky-clouds-page-header.jpg");
+}
+.header-overlay {
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 68%, rgba(255,255,255,1) 93%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(68%,rgba(255,255,255,0)), color-stop(93%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 68%,rgba(255,255,255,1) 93%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+height: 390px !important;
+width: 100%;
+z-index: 1000;
 }
 /* =Content
 -------------------------------------------------------------- */
@@ -1665,33 +1739,6 @@ strong.search-excerpt { background: yellow; }
 	margin-left: auto;
 	margin-right: auto;
 }
-  .page-header-top {
-    width: 100%;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 0 20px;
-  }
-  .navbar-inner {
-  margin-left: 20px;
-  }
-  .verse {
-    width: 100%;
-    margin-left: -30px !important;
-    margin-right: -20px;
-    padding: 0 20px 0 30px;
-  }
-  .top-footer {
-    width: 100%;
-    margin-left: -30px !important;
-    margin-right: -20px;
-    padding: 0 20px 0 30px;
-  }
-  .sub-footer {
-    width: 100%;
-    margin-left: -30px !important;
-    margin-right: -20px;
-    padding: 0 20px 0 30px;
-  }
 
     #header #logo {
 	    float:none;
@@ -1760,33 +1807,6 @@ strong.search-excerpt { background: yellow; }
     .well-header {
 	margin-top: 80px;
 	}
-  .page-header-top {
-    width: 100%;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 0 20px;
-  }
-  .navbar-inner {
-  margin-left: 20px;
-  }
-  .verse {
-    width: 100%;
-    margin-left: -30px !important;
-    margin-right: -20px;
-    padding: 0 20px 0 30px;
-  }
-  .top-footer {
-    width: 100%;
-    margin-left: -30px !important;
-    margin-right: -20px;
-    padding: 0 20px 0 30px;
-  }
-  .sub-footer {
-    width: 100%;
-    margin-left: -30px !important;
-    margin-right: -20px;
-    padding: 0 20px 0 30px;
-  }
 	#header .social-icons {
 	    margin-left: 25px;
     }
