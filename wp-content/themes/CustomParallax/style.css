@@ -898,7 +898,7 @@ background: url(http://www.grovestreetumc.org/assets/prayer_banner1.jpg) repeat,
 	margin-top: -210px;
 /*  position: fixed;*/
   overflow: visible;
-background-image: url("http://www.grovestreetumc.org/assets/sky_clouds1.png");
+background-image: url("http://www.grovestreetumc.org/assets/sky-clouds.png");
   background-size: cover;
   z-index: -9999;
   position: absolute;
