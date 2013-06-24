@@ -1827,6 +1827,9 @@ strong.search-excerpt { background: yellow; }
     margin-right: -20px;
     padding: 0 20px 0 30px;
   }
+  .top-footer h4 {
+    color: #555;
+  }
   .sub-footer {
     width: 100%;
     margin-left: -30px !important;
