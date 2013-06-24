@@ -26,13 +26,16 @@ function bootstrap_styles()
 	wp_register_style( 'colorbox', get_template_directory_uri() . '/css/colorbox.css', array(), '1.3.19', 'all' );
     wp_register_style( 'responsive-style', get_stylesheet_uri(), false, '2.3.1' );
 
+    wp_register_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), '1.0', 'all' );
 
 	//  enqueue the style:
-	wp_enqueue_style( 'bootstrap-styles' );
+    wp_enqueue_style( 'animate' );
+    wp_enqueue_style( 'bootstrap-styles' );
     wp_enqueue_style( 'bootstrap' );
     wp_enqueue_style( 'font-awesome' );
 	wp_enqueue_style( 'colorbox' );
     wp_enqueue_style( 'responsive-style' );
+
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_styles' );
 
@@ -51,7 +54,7 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
 		add_action( 'init', 'register_menu' );
 
 		function register_menu(){
-			register_nav_menu( 'top-bar', 'Top Menu' ); 
+			register_nav_menu( 'top-bar', 'Top Menu' );
 		}
 
 		class Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
@@ -108,10 +111,10 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
 				$id_field = $this->db_fields['id'];
 
 				//display this element
-				if ( is_array( $args[0] ) ) 
+				if ( is_array( $args[0] ) )
 					$args[0]['has_children'] = ! empty( $children_elements[$element->$id_field] );
-				else if ( is_object( $args[0] ) ) 
-					$args[0]->has_children = ! empty( $children_elements[$element->$id_field] ); 
+				else if ( is_object( $args[0] ) )
+					$args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
 				$cb_args = array_merge( array(&$output, $element, $depth), $args);
 				call_user_func_array(array(&$this, 'start_el'), $cb_args);
 
@@ -267,21 +270,21 @@ function insert_colorbox_js() {
     // <![CDATA[
     jQuery(document).ready(function($){
         $("a[rel='colorbox']").colorbox({
-                transition:'elastic', 
-                opacity:'0.7', 
+                transition:'elastic',
+                opacity:'0.7',
                 maxHeight:'90%'
         });
         $("a.gallery").colorbox({
                 rel:'group'
         });
         $("a[rel='colorboxvideo']").colorbox({
-                iframe:true, 
-                transition:'elastic', 
+                iframe:true,
+                transition:'elastic',
                 opacity:'0.7',
-                innerWidth:'60%', 
+                innerWidth:'60%',
                 innerHeight:'80%'
         });
-    });  
+    });
     // ]]>
     </script>
 <?php
@@ -333,60 +336,60 @@ function head_addons(){
             $section_1 =  of_get_option('section_1_upload');
             if ($section_1) {
                 $theme_options_styles .= '
-                #intro { 
-                    background: url(' . $section_1 . ') 50% 0 fixed; 
+                #intro {
+                    background: url(' . $section_1 . ') 50% 0 fixed;
                 }';
-            }  
+            }
 
             $section_2 =  of_get_option('section_2_upload');
             if ($section_2) {
                 $theme_options_styles .= '
-                #middle { 
-                    background: url(' . $section_2 . ') 50% 0 fixed; 
+                #middle {
+                    background: url(' . $section_2 . ') 50% 0 fixed;
                 }';
-            }  
+            }
 
             $section_3 =  of_get_option('section_3_upload');
             if ($section_3) {
                 $theme_options_styles .= '
-                #footer { 
-                    background: url(' . $section_3 . ') 50% 0 fixed; 
+                #footer {
+                    background: url(' . $section_3 . ') 50% 0 fixed;
                 }';
-            }      
-            
+            }
+
             $link_color = of_get_option('link_color');
             if ($link_color) {
                 $theme_options_styles .= '
-                a{ 
-                    color: ' . $link_color . '; 
+                a{
+                    color: ' . $link_color . ';
                 }';
             }
-            
+
             $link_hover_color = of_get_option('link_hover_color');
             if ($link_hover_color) {
                 $theme_options_styles .= '
-                a:hover{ 
-                    color: ' . $link_hover_color . '; 
+                a:hover{
+                    color: ' . $link_hover_color . ';
                 }';
             }
-            
+
             $link_active_color = of_get_option('link_active_color');
             if ($link_active_color) {
                 $theme_options_styles .= '
-                a:active{ 
-                    color: ' . $link_active_color . '; 
+                a:active{
+                    color: ' . $link_active_color . ';
                 }';
             }
 
             $topbar_position = of_get_option('nav_position');
             if ($topbar_position == 'static') {
                 $theme_options_styles .= '
-                .navbar{ 
-                    position: relative !important; 
+                .navbar{
+                    position: relative !important;
                 }
 
                 body {padding-top: 0;}
-                
+
                 .home #wrapper, #wrapper {
                     margin-top: 0 !important;
                 }';
@@ -404,11 +407,11 @@ function head_addons(){
             }
 
             if($theme_options_styles){
-                echo '<style>' 
+                echo '<style>'
                 . $theme_options_styles . '
                 </style>';
             }
-    
+
 };// end function head_addons()
 add_action('wp_head','head_addons',20);
 ?>
