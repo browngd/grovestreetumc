@@ -70,6 +70,16 @@
 </div>
 </div>
 <?php wp_footer(); ?>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from none JavaScript Browsers
+
+Image1= new Image(2336,1200)
+Image1.src = "http://www.grovestreetumc.org/assets/sky-clouds.png"
+
+// End Hiding -->
+</SCRIPT>
+
 <!-- Microsoft Translator -->
 <div id="MicrosoftTranslatorWidget" style="width: 200px; min-height: 0px; border-color: #3A5770; background-color: #78ADD0; display: none;"><noscript><a href="http://www.microsofttranslator.com/bv.aspx?a=http%3a%2f%2fwww.grovestreetumc.org%2f">Translate this page</a><br />Powered by <a href="http://www.bing.com/translator">Microsoft® Translator</a></noscript></div> <script type="text/javascript"> /* <![CDATA[ */ setTimeout(function() { var s = document.createElement("script"); s.type = "text/javascript"; s.charset = "UTF-8"; s.src = ((location && location.href && location.href.indexOf('https') == 0) ? "https://ssl.microsofttranslator.com" : "http://www.microsofttranslator.com" ) + "/ajax/v2/widget.aspx?mode=auto&widget=none&from=en&layout=ts"; var p = document.getElementsByTagName('head')[0] || document.documentElement; p.insertBefore(s, p.firstChild); }, 0); /* ]]> */ </script>
 </body>
