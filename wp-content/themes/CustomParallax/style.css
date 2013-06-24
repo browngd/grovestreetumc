@@ -485,7 +485,7 @@ html {
 }
 
 body {
-	background: #ffffff;
+	background: #addeff;
 }
 
 /* =Typography
@@ -894,12 +894,12 @@ background: url(http://www.grovestreetumc.org/assets/prayer_banner1.jpg) repeat,
 }
 .page-header-top {
 	width:100%;
-	height:1000px;
+	height:1200px;
 	margin-top: -210px;
 /*  position: fixed;*/
   overflow: visible;
 background-image: url("http://www.grovestreetumc.org/assets/sky-clouds.png");
-  background-size: cover;
+  /*background-size: cover;*/
   z-index: -9999;
   position: absolute;
 }
