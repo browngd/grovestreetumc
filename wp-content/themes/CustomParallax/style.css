@@ -1766,6 +1766,8 @@ strong.search-excerpt { background: yellow; }
 
 @media (max-width: 769px) {
 
+
+
   #intro, #middle, #footer {
     margin-right: -20px;
     margin-left: -20px;
@@ -1900,6 +1902,14 @@ strong.search-excerpt { background: yellow; }
 
 
 @media screen and (max-width: 480px) {
+
+    .animated {
+
+  -webkit-animation-duration: 0s;
+     -moz-animation-duration: 0s;
+       -o-animation-duration: 0s;
+          animation-duration: 0s;
+}
 
     body {
     }
