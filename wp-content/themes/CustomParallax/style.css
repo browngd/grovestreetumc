@@ -329,6 +329,7 @@ sizingMethod='scale');
   margin-top: 10px;
   background: #ffffff;
   max-width:1170px;
+  min-height: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 45px;
