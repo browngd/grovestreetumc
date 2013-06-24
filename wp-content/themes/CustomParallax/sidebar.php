@@ -4,8 +4,8 @@
  *
  *
  * @file           sidebar.php
- * @package        Bootstrap Parallax 
- * @author         Brad Williams 
+ * @package        Bootstrap Parallax
+ * @author         Brad Williams
  * @copyright      2011 - 2013 Brag Interactive
  * @license        license.txt
  * @version        Release: 2.3.1
@@ -15,11 +15,11 @@
 ?>
         <div class="span3">
         <div id="widgets" class="well">
-        
+
         <?php responsive_widgets(); // above widgets hook ?>
-            
+
             <?php if (!dynamic_sidebar('main-sidebar')) : ?>
-            
+
                 <div class="widget-title"><?php _e('In Archive', 'responsive'); ?></div>
 					<ul>
 						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
