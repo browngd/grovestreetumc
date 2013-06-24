@@ -335,8 +335,8 @@ sizingMethod='scale');
   border-radius: 10px;
   box-shadow: 0 0 50px #999;
   height: auto;
-  animation-delay:3s;
--webkit-animation-delay:3s; /* Safari and Chrome */
+  animation-delay:4s;
+-webkit-animation-delay:4s; /* Safari and Chrome */
 }
 
 .outer {
