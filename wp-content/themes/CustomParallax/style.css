@@ -338,7 +338,7 @@ sizingMethod='scale');
   border-radius: 10px;
   box-shadow: 0 0 50px #999;
   height: auto;
-  animation-delay:3.25s;
+  animation-delay:3s;
 -webkit-animation-delay:3.25s; /* Safari and Chrome */
 }
 
@@ -1826,9 +1826,6 @@ strong.search-excerpt { background: yellow; }
     margin-left: -30px !important;
     margin-right: -20px;
     padding: 0 20px 0 30px;
-  }
-  .top-footer h4 {
-    color: #555;
   }
   .sub-footer {
     width: 100%;
