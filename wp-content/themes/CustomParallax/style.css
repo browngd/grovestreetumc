@@ -1788,7 +1788,25 @@ strong.search-excerpt { background: yellow; }
     width: 100%;
     margin-left: -20px;
     margin-right: -20px;
+    padding: 0px 20px;
+  }
+  .banner-content {
+    margin-top: 60px;
+  }
+  .content-overlay {
+    .page-header-top
+    width: 100%;
+    margin-left: -20px;
+    margin-right: -20px;
     padding: 0 20px;
+    border-radius: 0px;
+  }
+  .bible-verse {
+    width:85%;
+  }
+  .bible-verse h1 {
+    line-height: 50px;
+    font-size: 20px;
   }
   .navbar-inner {
   margin-left: 20px;
