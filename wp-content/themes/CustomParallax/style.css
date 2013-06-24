@@ -1797,7 +1797,7 @@ strong.search-excerpt { background: yellow; }
     width: 100%;
     margin-left: -20px;
     margin-right: -20px;
-    padding: -20 20px;
+    padding: 20 20px;
     border-radius: 0px;
   }
   .content-overlay h1 {
