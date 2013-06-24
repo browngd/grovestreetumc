@@ -1800,6 +1800,9 @@ strong.search-excerpt { background: yellow; }
     padding: 0 20px;
     border-radius: 0px;
   }
+  .content-overlay h1 {
+    font-size: 16px;
+  }
   .bible-verse {
     width:85%;
   }
