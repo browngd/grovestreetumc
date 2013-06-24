@@ -339,7 +339,7 @@ sizingMethod='scale');
   box-shadow: 0 0 50px #999;
   height: auto;
   animation-delay:3s;
--webkit-animation-delay:3.25s; /* Safari and Chrome */
+-webkit-animation-delay:3s; /* Safari and Chrome */
 }
 
 .outer {
