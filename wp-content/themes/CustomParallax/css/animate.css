@@ -15,6 +15,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	-webkit-backface-visibility: hidden;
 }
 .animated {
+
 	-webkit-animation-duration: 1s;
 	   -moz-animation-duration: 1s;
 	     -o-animation-duration: 1s;
