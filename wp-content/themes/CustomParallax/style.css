@@ -1746,16 +1746,16 @@ img.wp-post-image, img.attachment-thumbnail, img.attachment-medium, img.attachme
 
 /* */
 
-.button.blue{
+.btn-primary{
   background-color: #269CE9;
   border-color: #269CE9;
 }
 
-.button.blue:hover{
+.btn-primary:hover{
   background-color: #70B9E8;
 }
 
-.button.blue:active{
+.btn-primary:active{
   background: #269CE9;
 }
 
