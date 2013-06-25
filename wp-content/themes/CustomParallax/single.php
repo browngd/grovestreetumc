@@ -26,7 +26,7 @@
 </div>
 <div style="margin-top:0px;">
     <div class="banner-content" style="max-width:960px; margin-left:auto; margin-right:auto;">
-        <a href="http://www.grovestreetumc.org/imagine-no-malaria"><img src="http://www.grovestreetumc.org/wp-content/uploads/2013/06/hd_01.png" alt="hd_01" width="960" height="172" class="aligncenter size-full wp-image-668 animated fadeInDownBig" style="animation-delay:4s; -webkit-animation-delay:4s;"/></a>
+        <a href="http://www.grovestreetumc.org/imagine-no-malaria"><img src="http://www.grovestreetumc.org/wp-content/uploads/2013/06/hd_01.png" alt="hd_01" width="960" height="172" class="aligncenter size-full wp-image-668 animated fadeIn" style="animation-delay:4s; -webkit-animation-delay:4s;"/></a>
     </div>
 </div>
 <div class="span12 bible-verse">
