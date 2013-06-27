@@ -82,11 +82,7 @@
             <?php } else { ?>
             <a class="brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
             <?php } } ?>
-
-
-
-
-          <div class="nav-collapse collapse">
+        <div class="nav-collapse collapse">
 
 			   <?php
 
