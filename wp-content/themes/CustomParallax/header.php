@@ -73,7 +73,7 @@
           </a>
 
            <?php if ( of_get_option('logo_upload') ) { ?>
-            <div id="logo"><a href=" <?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage">
+            <div id="logo"><a rel="tooltip" title="Click for home page" href=" <?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage">
             <img src="<?php echo of_get_option('logo_upload'); ?>" alt="<?php bloginfo( 'name' ) ?>"/>
             </a></div><!-- end of #logo -->
             <?php } else { ?>
