@@ -135,7 +135,7 @@
                     .'<i class="icon-linkedin-sign"></i>'
                     .'</a>';
 
-                 if (of_get_option('google_url')) echo '<a href="' . of_get_option('google_url') . '">'
+                 if (of_get_option('google_url')) echo '<a rel="tooltip" title="Connect on Google+" href="' . of_get_option('google_url') . '">'
                     .'<i class="icon-google-plus-sign"></i>'
                     .'</a>';
 
