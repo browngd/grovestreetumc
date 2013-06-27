@@ -1832,6 +1832,12 @@ strong.search-excerpt { background: yellow; }
     margin-right: -20px;
     padding: 0 20px 0 30px;
   }
+  .pastor {
+    background-size: contain;
+    }
+  .pastor p {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -1898,8 +1904,12 @@ strong.search-excerpt { background: yellow; }
 	text-align:center;
 	}
   .pastor {
-      background-size: 50%;
+    background-size: contain;
     }
+  .pastor p {
+    width: 80%;
+  }
+
 }
 
 
@@ -1931,9 +1941,12 @@ strong.search-excerpt { background: yellow; }
     .widget-wrapper-left {
 	    padding-left:0;
     }
-    .pastor {
-    	background-size: 50%;
+.pastor {
+    background-size: 65%;
     }
+  .pastor p {
+    width: 60%;
+  }
 
     #footer {
 	    text-align:center;
