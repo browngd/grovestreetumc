@@ -73,7 +73,7 @@
           </a>
 
            <?php if ( of_get_option('logo_upload') ) { ?>
-            <div id="logo"><a rel="tooltip" title="Click for home page" href=" <?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage">
+            <div id="logo"><a class="tooltips" title="Click for home page" href=" <?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage">
             <img src="<?php echo of_get_option('logo_upload'); ?>" alt="<?php bloginfo( 'name' ) ?>"/>
             </a></div><!-- end of #logo -->
             <?php } else { ?>
@@ -119,11 +119,11 @@
 
                 echo '<div class="social-icons nav pull-right">';
 
-           if (of_get_option('twitter_url')) echo '<a rel="tooltip" title="Connect on Twitter" href="' . of_get_option('twitter_url') . '">'
+           if (of_get_option('twitter_url')) echo '<a class="tooltips" title="Connect on Twitter" href="' . of_get_option('twitter_url') . '">'
                     .'<i class="icon-twitter-sign"></i>'
                     .'</a>';
 
-                if (of_get_option('fb_url')) echo '<a rel="tooltip" title="Connect on Facebook" href="' . of_get_option('fb_url') . '">'
+                if (of_get_option('fb_url')) echo '<a class="tooltips" title="Connect on Facebook" href="' . of_get_option('fb_url') . '">'
                     .'<i class="icon-facebook-sign"></i>'
                     .'</a>';
 
@@ -135,7 +135,7 @@
                     .'<i class="icon-linkedin-sign"></i>'
                     .'</a>';
 
-                 if (of_get_option('google_url')) echo '<a rel="tooltip" title="Connect on Google+" href="' . of_get_option('google_url') . '">'
+                 if (of_get_option('google_url')) echo '<a class="tooltips" title="Connect on Google+" href="' . of_get_option('google_url') . '">'
                     .'<i class="icon-google-plus-sign"></i>'
                     .'</a>';
 
